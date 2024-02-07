@@ -1,0 +1,30 @@
+﻿
+@{
+    ViewBag.Title = "Demo";
+}
+<html>
+<head>
+    <title></title>
+    @*<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/css/select2.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.5/js/select2.min.js" > </script>*@
+
+</head>
+<body>
+    <div>
+        <!--<select><option></option></select></-->
+     <h3> Products</h3>
+        <select id="products" style="width:10%">
+            <option value="" selected hidden>Select</option>
+            <option></option>
+        </select>
+    </div>
+</body>
+</html>
+<script>
+    $(document).ready(function () {
+        var prodlist = ["Rice", "Apple", "Orange", "Banana", "Beans", "Egg", "Nuts", "Fries"];
+        $("#products").select2({ data: prodlist });
+        
+    });
+</script>
